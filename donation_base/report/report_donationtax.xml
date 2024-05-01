@@ -20,6 +20,7 @@
                     />
                     <h3>Date: <span t-field="o.date" /></h3>
                     <h3>Amount Total: <span t-field="o.amount" /></h3>
+                    <h3>En toutes lettres: <span t-esc="o.currency_id.with_context(lang='fr_FR').amount_to_text(o.amount)"/></h3>
                 </div>
             </t>
         </t>
